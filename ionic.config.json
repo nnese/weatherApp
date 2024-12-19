@@ -1,7 +1,13 @@
 {
   "name": "weather",
   "integrations": {
-    "capacitor": {}
+    "cordova": {}
   },
-  "type": "angular"
+  "type": "angular",
+  "proxy": {
+    "/api": {
+      "target": "http://localhost:5000",
+      "secure": false
+    }
+  }
 }

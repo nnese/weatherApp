@@ -1,0 +1,33 @@
+<ion-content [fullscreen]="true">
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-input [(ngModel)]="email" label="Email" type="email" errorText="Geçersiz email" fill="outline"></ion-input>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-input [(ngModel)]="password" label="Şifre" type="password" fill="outline" value=""></ion-input>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-button expand="full" shape="round" (click)="login()">Login</ion-button>
+      </ion-col>
+    </ion-row>
+
+    <!-- <ion-row>
+      <ion-col>
+        <div class="register">Kayıt Ol</div>
+      </ion-col>
+      <ion-col>
+        <div class="forgetPass">Şifremi Unuttum</div>
+      </ion-col>
+    </ion-row> -->
+
+  </ion-grid>
+
+
+</ion-content>
