@@ -37,7 +37,7 @@ export class LoginPage implements OnInit {
         this.router.navigate(['/landing']);
       }
     }, (error) => {
-      this.presentAlert();
+      this.presentAlert(); 
     });
   }
 
